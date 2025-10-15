@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oxygen:wght@300&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+/* ================= FUENTES ================= */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&display=swap');
 
 /* ================= GENERAL ================= */
 * {
@@ -10,9 +11,17 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Texto general */
 }
 
+
+/* Títulos y subtítulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+.btn {
+    font-family: 'Roboto', sans-serif;
+}
 img {
     max-width: 100%;
 }
@@ -23,36 +32,85 @@ img {
 }
 
 /* ================= NAVBAR ================= */
+/* ================== NAVBAR ================== */
+/* ================= NAVBAR ================= */
 .navbar {
-    padding: 0.8rem 2rem; /* margen interno para no pegarse a los bordes */
+    padding: 0.8rem 2rem;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Navbar responsive */
-@media (max-width: 991px) {
-  .navbar-brand {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .navbar-toggler {
+/* Links */
+.navbar .nav-link {
+    color: #000000;
+    font-weight: 600;
+    transition: color 0.3s, border-bottom 0.3s;
     position: relative;
-    z-index: 2;
-  }
-  .navbar .container {
-    position: relative;
-  }
 }
+
+.navbar .nav-link:hover {
+    color: #EDA35A;
+}
+
+.navbar .nav-link.active::after {
+    content: '';
+    display: block;
+    height: 3px;
+    background: #EDA35A;
+    width: 100%;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    border-radius: 2px;
+}
+
+/* Logo y texto marca */
+.navbar-logo {
+    height: 80px;
+    width: auto;
+}
+
+.brand-text {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #000;
+    margin-left: 0.5rem;
+    display: none; /* por defecto oculto */
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 991px) {
+    .navbar-logo {
+        display: none; /* Oculta el logo */
+    }
+    .brand-text {
+        display: inline-block; /* Muestra el texto */
+    }
+    
+    .navbar-brand {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .navbar-toggler {
+        position: relative;
+        z-index: 2;
+    }
+    
+    .navbar .container {
+        position: relative;
+    }
+}
+
+
+
 
 /* ================= BANNER ================= */
 #banner img {
   height: 75vh; /* altura: 75% de la ventana del navegador */
   object-fit: cover; /* recorta la imagen para llenar el área sin deformarla */
+  object-position: center center; /* centra la imagen dentro del contenedor */
 }
 
-/* Botón debajo del slider */
-#banner .btn {
-  margin-top: 20px;
-}
 
 /* ================= SECCION DE CARDS ================= */
 .submenu-opciones {
