@@ -1,7 +1,5 @@
-/* ================= FUENTES ================= */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&display=swap');
 
-/* ================= GENERAL ================= */
 * {
     margin: 0;
     padding: 0;
@@ -11,11 +9,9 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif; /* Texto general */
+    font-family: 'Roboto', sans-serif; 
 }
 
-
-/* Títulos y subtítulos */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Bebas Neue', sans-serif;
 }
@@ -25,32 +21,24 @@ h1, h2, h3, h4, h5, h6 {
 img {
     max-width: 100%;
 }
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
-
-/* ================= NAVBAR ================= */
-/* ================== NAVBAR ================== */
-/* ================= NAVBAR ================= */
+/* navbar*/
 .navbar {
     padding: 0.8rem 2rem;
     font-family: 'Poppins', sans-serif;
 }
-
-/* Links */
 .navbar .nav-link {
     color: #000000;
     font-weight: 600;
     transition: color 0.3s, border-bottom 0.3s;
     position: relative;
 }
-
 .navbar .nav-link:hover {
     color: #EDA35A;
 }
-
 .navbar .nav-link.active::after {
     content: '';
     display: block;
@@ -62,35 +50,31 @@ img {
     left: 0;
     border-radius: 2px;
 }
-
-/* Logo y texto marca */
 .navbar-logo {
     height: 80px;
     width: auto;
 }
-
 .brand-text {
     font-weight: 700;
     font-size: 1.5rem;
     color: #000;
     margin-left: 0.5rem;
-    display: none; /* por defecto oculto */
+    display: none; 
 }
-
-/* ================= RESPONSIVE ================= */
+/* navbar mediaquerys para probar el menu hamburguesa*/
 @media (max-width: 991px) {
     .navbar-logo {
-        display: none; /* Oculta el logo */
+        display: none; 
     }
     .brand-text {
-        display: inline-block; /* Muestra el texto */
+        display: inline-block; 
     }
     
     .navbar-brand {
         justify-content: center;
         width: 100%;
     }
-    
+  
     .navbar-toggler {
         position: relative;
         z-index: 2;
@@ -100,34 +84,61 @@ img {
         position: relative;
     }
 }
-
-
-
-
-/* ================= BANNER ================= */
+/* banner*/
 #banner img {
-  height: 75vh; /* altura: 75% de la ventana del navegador */
-  object-fit: cover; /* recorta la imagen para llenar el área sin deformarla */
-  object-position: center center; /* centra la imagen dentro del contenedor */
+  height: 75vh; 
+  object-fit: cover; 
+  object-position: center center; 
+}
+#banner .carousel-caption h5 {
+    color: #000000;       
+    font-weight: 900;     
+}
+#banner .carousel-caption .quefiaca {
+    color: #f6f6f6ff;       
+    font-weight: 1500;     
+}
+#banner .carousel-caption p {
+    color: #000000;      
+    font-weight: 500;     
+}
+.btn-banner {
+  background-color: #EDA35A;
+  color: #000000;
+  border: none;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-banner:hover {
+  background-color: #f0b170; 
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 
-/* ================= SECCION DE CARDS ================= */
+/* cards*/
 .submenu-opciones {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; /* para que haga salto en mobile */
-  padding-top: 80px; /* separación del banner */
+  flex-wrap: wrap;
+  padding-top: 80px;
   padding-bottom: 60px;
   gap: 20px;
 }
 
 .submenu-opciones .card {
-  border-radius: 15px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 30px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s, box-shadow 0.3s;
-  flex-basis: calc(25% - 20px); /* 4 cards en desktop */
+  flex-basis: calc(25% - 20px);
   text-align: center;
+  overflow: hidden; 
 }
 
 .submenu-opciones .card:hover {
@@ -138,29 +149,53 @@ img {
 .submenu-opciones .card-img-top {
   height: 200px;
   object-fit: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 .submenu-opciones .card-body .btn {
   margin-top: 10px;
+  background-color: #EDA35A; 
+  color: #000000; 
+  border-radius: 50px; 
+  font-weight: 600;
+  padding: 0.6rem 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  border: none;
 }
 
-/* ======== SECCION ACCIONES FUNDACION ======== */
+.submenu-opciones .card-body .btn:hover {
+  background-color: #ffffff; 
+  color: #EDA35A; 
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+/* seccion acciones de la fundacion*/
 .acciones-fundacion {
   background: linear-gradient(
     to bottom,
-    #ff8c42 0%,      /* naranja fuerte arriba */
-    #ffa55a 40%,     /* transición intermedia */
-    #fff 100%        /* se apaga a blanco abajo */
+    #EDA35A 0%,      
+    #EDA35A 25%,     
+    #fff 100%       
   );
   color: #fff;
   padding: 60px 0;
+  text-align: center;
+}
+.acciones-fundacion .accion-item {
+  margin-bottom: 40px; 
+}
+
+.acciones-fundacion .accion-item .icono-accion {
+  width: 80px; 
+  height: auto;
+  display: block;
+  margin: 0 auto 20px; 
 }
 
 .acciones-fundacion .accion-item h4 {
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 15px; 
 }
 
 .acciones-fundacion .accion-item p {
@@ -179,75 +214,75 @@ img {
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
+
 /* .newsletter */
 .newsletter {
-  background-color: #ffffff; /* Fondo blanco */
+  background-color: #ffffff; 
   border-radius: 15px;
-  padding: 60px 15px; /* Espacio vertical generoso */
+  padding: 60px 15px; 
 }
 
 .newsletter-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #333128;
+  color: #EDA35A; 
+  margin-bottom: 2rem;
 }
 
 .newsletter-input {
-  border-radius: 50px;   /* Ovalado */
-  max-width: 400px;      /* No ocupa toda la pantalla */
+  border-radius: 50px;   
+  max-width: 400px;      
   text-align: center;
+  border: 2px solid #000000; 
+  padding: 10px 15px;
+  font-size: 1rem;
+}
+
+.newsletter-input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
 }
 
 .newsletter-btn {
   border-radius: 50px;
   font-weight: 600;
-  min-width: 180px;      /* Botón más pequeño pero visible */
+  min-width: 180px;      
   padding: 10px 25px;
+  background-color: #EDA35A; 
+  color: #000000; 
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .newsletter-btn:hover {
+  background-color: #FCEEE1; 
   transform: translateY(-3px);
   box-shadow: 0 8px 15px rgba(0,0,0,0.15);
 }
-
-/* Responsive para pantallas muy pequeñas */
+/* algunas mediaquerys para mobile*/
 @media (max-width: 575px) {
   .newsletter-input {
     max-width: 90%;
   }
 }
-
-
-
-
-/* Ajuste responsive: input más ancho en desktop */
 @media (min-width: 576px) {
   .newsletter form > div {
     max-width: 400px;
   }
 }
-
-/* Ajuste responsive: input más ancho en desktop, centrado */
 @media (min-width: 576px) {
   .newsletter form > div {
     max-width: 400px;
   }
 }
-
-
-
-
-/* Mediaqueries para mobile */
 @media (max-width: 991px) {
   .submenu-opciones .card {
-    flex-basis: calc(50% - 15px); /* 2 cards por fila en tablet y mobile */
+    flex-basis: calc(50% - 15px); 
   }
 }
 
 @media (max-width: 575px) {
   .submenu-opciones .card-img-top {
-    height: 150px; /* imagen más chica en móvil */
+    height: 150px; 
   }
   .submenu-opciones .card-body h5 {
     font-size: 1rem;
@@ -257,52 +292,55 @@ img {
   }
 }
 
-/* ================= FOOTER ================= */
-.footer i {
-  color: #ff9800; /* un naranja suave para destacar los íconos */
+/* el famisisimo footer*/
+.footer {
+  background-color: #000000; 
+  color: #ffffff;
+  padding: 40px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icon i {
+  color: #EDA35A; 
   transition: transform 0.3s, color 0.3s;
 }
 
-.footer i:hover {
+.footer-icon i:hover {
   transform: translateY(-5px);
-  color: #ffc107; /* un naranja más brillante al pasar el mouse */
+  color: #FFC107; 
 }
 
-.footer p {
+.footer-icon p {
   font-size: 0.9rem;
   margin-top: 5px;
+  text-align: center;
 }
 
-@media(max-width: 575px) {
-  .footer i {
+.footer hr {
+  margin: 1rem 0;
+  border-color: rgba(255,255,255,0.2);
+}
+
+.footer small {
+  font-size: 0.8rem;
+  color: #C1C1C1;
+}
+
+@media (max-width: 991px) {
+  .footer {
+    padding: 30px 15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer-icon i {
     font-size: 2rem;
   }
 }
-
-
-@media(max-width:991px) {
-  .footer{
-    padding: 30px;
-  }
-  .footer-contenido{
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
-/* ================= CLASES ELIMINADAS / NO USADAS ================= */
-/*
-.header
-.menu
-.logo-1
-.menu-icono
-.informacion
-.informacion-contenido
-.informacion-1
-.img1-seccion-3
-.img2-seccion-3
-.img3-seccion-3
-.header-img
-.header-txt
-.header-contenido
-*/
