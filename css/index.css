@@ -54,12 +54,13 @@ img {
     height: 80px;
     width: auto;
 }
-.brand-text {
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: #000;
-    margin-left: 0.5rem;
-    display: none; 
+.brand-name {
+  font-weight: 700;
+  font-family: 'Bebas Neue';
+  font-size: 1.5rem;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 /* navbar mediaquerys para probar el menu hamburguesa*/
 @media (max-width: 991px) {
@@ -85,22 +86,23 @@ img {
     }
 }
 /* banner*/
-#banner img {
+.banner img {
   height: 75vh; 
   object-fit: cover; 
   object-position: center center; 
 }
-#banner .carousel-caption h5 {
-    color: #000000;       
-    font-weight: 900;     
+.banner .carousel-caption h5 {
+    color: #ffffff;       
+    font-weight: 1500;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);     
 }
-#banner .carousel-caption .quefiaca {
-    color: #f6f6f6ff;       
-    font-weight: 1500;     
-}
-#banner .carousel-caption p {
-    color: #000000;      
-    font-weight: 500;     
+
+.banner .carousel-caption p {
+    color: #ffffff;      
+    font-weight: 800;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);     
 }
 .btn-banner {
   background-color: #EDA35A;
@@ -169,6 +171,7 @@ img {
   color: #EDA35A; 
   transform: translateY(-3px);
   box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+  border: 2px solid #000000;
 }
 /* seccion acciones de la fundacion*/
 .acciones-fundacion {
@@ -184,6 +187,8 @@ img {
 }
 .acciones-fundacion .accion-item {
   margin-bottom: 40px; 
+  color: #000000ff;
+
 }
 
 .acciones-fundacion .accion-item .icono-accion {
@@ -191,16 +196,19 @@ img {
   height: auto;
   display: block;
   margin: 0 auto 20px; 
+  filter: brightness(0) invert(1);
 }
 
 .acciones-fundacion .accion-item h4 {
   font-weight: 600;
   margin-bottom: 15px; 
+  color: #000000;
 }
 
 .acciones-fundacion .accion-item p {
   max-width: 300px;
   margin: 0 auto 20px;
+  color: #000000;
 }
 
 .acciones-fundacion .btn {
@@ -211,7 +219,10 @@ img {
 
 .acciones-fundacion .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: none;
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
 }
 
 
