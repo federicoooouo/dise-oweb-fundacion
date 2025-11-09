@@ -1,44 +1,114 @@
-/* formulario*/
-#contacto h2 {
-    color: #EDA35A;      
-    font-weight: 700;
-    margin-bottom: 1rem;
+/* ====== FORMULARIO ====== */
+.contacto-formulario {
+  background-color: #f8f9fa;
 }
-#contacto p {
-    color: #000;           
-    margin-bottom: 1.5rem;
+
+.contacto-formulario .card {
+  border-radius: 20px;
+  background-color: #fff;
 }
-.contacto-form input,
-.contacto-form textarea {
-    border: 2px solid #000;  
-    padding: 0.8rem 1rem;
+
+.contacto-formulario input,
+.contacto-formulario textarea {
+  border: 1px solid #ddd;
+  padding: 0.8rem;
+  border-radius: 10px;
 }
-.contacto-form textarea {
-    resize: none;             
-}
+
 .btn-naranja {
-    background-color: #EDA35A;
-    color: #000;
-    font-weight: 600;
-    padding: 0.6rem 1.5rem;
-    border-radius: 50px;
-    border: none;
-    transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #EDA35A;
+  color: #000;
+  font-weight: 600;
+  padding: 0.6rem 1.5rem;
+  border-radius: 50px;
+  border: none;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
+
 .btn-naranja:hover {
-    background-color: #EDA35A; /* mismo color que el normal */
-    transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  background-color: #EDA35A;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
 }
-/* seccion datos y el mapa*/
-.contacto-datos h5 {
-    color: #EDA35A;
-    margin-bottom: 1rem;
+
+/* ====== DATOS ====== */
+.contacto-datos {
+  background-color: #fff;
+  text-align: center;
 }
+
+.contacto-datos .card {
+  border-left: none;
+  border-top: 5px solid #EDA35A;
+  border-radius: 20px;
+}
+
 .contacto-datos p {
-    font-size: 0.95rem;
-    margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.8rem;
 }
+
+.whatsapp-icon {
+  color: #EDA35A;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.15);
+  color: #d98b48;
+}
+
+/* Animación */
+@keyframes fadeInSection {
+  0% { opacity: 0; transform: translateY(25px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.contacto-datos .card {
+  animation: fadeInSection 0.8s ease-in-out;
+}
+
+
+/* ====== ANIMACIÓN SUAVE AL ENTRAR ====== */
+@keyframes fadeInSection {
+  0% { opacity: 0; transform: translateY(25px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.contacto-formulario .card,
+.contacto-datos .card {
+  animation: fadeInSection 0.8s ease-in-out;
+}
+
+
+
+
+.refugios h5 {
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.refugios .map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.refugios .map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 10px;
+}
+
 /* intento de responsive*/
 
 .map-responsive {
@@ -55,3 +125,4 @@
     height: 100%;
     border: 0;
 }
+

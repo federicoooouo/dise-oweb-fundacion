@@ -1,0 +1,77 @@
+/* ===== SECCIÓN FORMAS DE DONAR ===== */
+.formas-donar {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.formas-donar h2 {
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 3rem;
+}
+
+/* --- Cards --- */
+.formas-donar .card {
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 360px; /* Fuerza un alto uniforme */
+}
+
+.formas-donar .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Íconos */
+.formas-donar i {
+  font-size: 3rem;
+  color: #EDA35A;
+}
+
+/* Hover */
+.formas-donar .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(237, 163, 90, 0.4);
+}
+
+/* Botones */
+.formas-donar .btn-outline-warning {
+  border-width: 2px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  align-self: center;
+  margin-top: auto;
+  width: 60%;
+}
+
+.formas-donar .btn-outline-warning:hover {
+  background-color: #EDA35A;
+  color: #fff;
+  border-color: #EDA35A;
+}
+
+/* Alineación de texto y espaciado */
+.formas-donar .card-title {
+  margin-bottom: 1rem;
+}
+
+.formas-donar .card-text {
+  flex-grow: 1;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive: centrado y separación uniforme */
+@media (max-width: 767px) {
+  .formas-donar .card {
+    min-height: auto;
+  }
+  .formas-donar .btn-outline-warning {
+    width: 100%;
+  }
+}

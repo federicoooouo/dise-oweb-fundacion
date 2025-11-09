@@ -30,53 +30,103 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link " href="./historia.html">Sobre Nosotros</a></li>
         <li class="nav-item"><a class="nav-link active" href="./form.html">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="./donaciones.html">Doná</li>
+
       </ul>
     </div>
   </div>
 </nav>
 </header>
-<!-- formulario -->
-<section id="contacto" class="py-5">
+<section class="contacto-formulario py-5 bg-light">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-lg-6 mb-4 contacto-form">
-        <h2>Contacto</h2>
-        <p>Escribinos y nos pondremos en contacto lo antes posible.</p>
-        <form>
-          <div class="mb-3">
-            <input type="text" class="form-control rounded" placeholder="Nombre completo">
-          </div>
-          <div class="mb-3">
-            <input type="email" class="form-control rounded" placeholder="Correo electrónico">
-          </div>
-          <div class="mb-3">
-            <input type="text" class="form-control rounded" placeholder="Asunto">
-          </div>
-          <div class="mb-3">
-            <textarea class="form-control rounded" rows="5" placeholder="Mensaje"></textarea>
-          </div>
-          <button type="submit" class="btn-naranja">Enviar</button>
-        </form>
+      <div class="col-lg-8">
+        <div class="card shadow-sm border-0 p-4 text-center">
+          <h2 class="fw-bold mb-3">Contacto</h2>
+          <p class="text-muted mb-4">Escribinos y nos pondremos en contacto lo antes posible.</p>
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control rounded" placeholder="Nombre completo">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control rounded" placeholder="Correo electrónico">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control rounded" placeholder="Asunto">
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control rounded" rows="5" placeholder="Mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn-naranja">Enviar</button>
+          </form>
+        </div>
       </div>
-      <!-- datos y mapa -->
-      <div class="col-lg-4 contacto-datos">
-        <h5>Nuestros datos</h5>
-        <p><i class="bi bi-envelope-fill me-2"></i> contacto@fundacionayuandopatitas.com</p>
-        <p><i class="bi bi-telephone-fill me-2"></i> +54 123 456 7890</p>
-        <p><i class="bi bi-geo-alt-fill me-2"></i> Calle Patitas 123, San Juan, Ciudad, Argentina</p>
-        <div class="map-responsive mt-3">
+    </div>
+  </div>
+</section>
+
+<section class="refugios py-5 bg-light border-top border-warning border-3">
+  <div class="container">
+    <h3 class="text-center mb-4" style="color:#EDA35A; font-weight:700;">Nuestros Refugios</h3>
+    <div class="row text-center">
+      
+      <div class="col-md-4 mb-4">
+        <h5>El Zonda</h5>
+        <div class="map-responsive">
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.123456789!2d-68.523456!3d-31.54321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x123456789abcdef!2sFundaci%C3%B3n+Ayudando+Patitas!5e0!3m2!1ses-419!2sar!4v1697300000000!5m2!1ses-419!2sar" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.123456789!2d-68.523456!3d-31.54321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x123456789abcdef!2sFundaci%C3%B3n+Ayudando+Patitas!5e0!3m2!1ses-419!2sar!4v1697300000000!5m2!1ses-419!2sar"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5>Refugio Central</h5>
+        <div class="map-responsive">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.5678!2d-68.510000!3d-31.540000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xabcdef123456789!2sRefugio+Norte!5e0!3m2!1ses-419!2sar!4v1697300000001!5m2!1ses-419!2sar"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5>Refugio Lujan de Cuyo</h5>
+        <div class="map-responsive">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.9999!2d-68.530000!3d-31.550000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x987654321abcdef!2sRefugio+Sur!5e0!3m2!1ses-419!2sar!4v1697300000002!5m2!1ses-419!2sar"
+            allowfullscreen
+            loading="lazy">
           </iframe>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<section class="contacto-datos py-5">
+  <div class="container d-flex justify-content-center">
+    <div class="card shadow-sm border-0 p-4 text-center" style="max-width: 600px;">
+      <h3 class="fw-bold mb-4" style="color:#EDA35A;">Nuestros datos</h3>
+
+      <p><i class="bi bi-envelope-fill me-2 text-dark"></i> contacto@fundacionayudandopatitas.com</p>
+      <p><i class="bi bi-telephone-fill me-2 text-dark"></i> +54 123 456 7890</p>
+      <p><i class="bi bi-geo-alt-fill me-2 text-dark"></i> Calle Patitas 123, San Juan, Argentina</p>
+
+      <div class="mt-4">
+        <a href="https://wa.me/5491234567890" target="_blank" class="d-inline-flex align-items-center text-decoration-none justify-content-center">
+          <i class="bi bi-whatsapp fs-2 me-2 whatsapp-icon"></i>
+          <span class="fw-semibold text-dark">¡Chateá con nosotros por WhatsApp!</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- footer = que el index-->
 <footer class="footer bg-dark text-white py-4">
   <div class="container">
